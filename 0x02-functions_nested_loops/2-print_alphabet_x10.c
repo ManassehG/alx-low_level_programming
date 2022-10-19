@@ -9,6 +9,7 @@
 void print_alphabet_x10(void)
 {
 	int a, coef;
+
 	coef = 0;
 
 	while (coef < 10)
