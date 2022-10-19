@@ -1,12 +1,43 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_times_table - Entry point
- * @n: input
+ * print_to_98 - a function that prints all natu
+ *
+ * user input's number prints to 98, regardless < 98 or > 98
+ * @n: number input ral numbers from n to 98
  * Return: Always 0 (Success)
  */
-void print_times_table(int n)
+
+void print_to_98(int n)
 {
+	if (n < 98)
+	{
+		while (n <= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n++;
+		}
+	}
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
 
-
-	return (0);
+			}
+			n--;
+		}
+	}
+	else
+	{
+		printf("98");
+	}
+	printf("\n");
 }
