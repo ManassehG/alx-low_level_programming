@@ -17,9 +17,9 @@ void print_most_numbers(void)
 			{
 				_putchar((a / 10) + '0');
 			}
-			_putchar(a % 10 + '0')
+			_putchar(a % 10 + '0');
 		}
 		b++;
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
