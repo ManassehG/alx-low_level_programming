@@ -8,6 +8,7 @@
 void print_square(int size)
 {
 	int co, ro;
+
 	if (size > 0)
 	{
 		for (co = 1; co <= size; co++)
