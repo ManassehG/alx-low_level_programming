@@ -8,42 +8,23 @@
 void print_number(int n)
 {
 	int m;
-	int c;
 	int num;
 
 	num = n;
 
 	if (num < 0)
 	{
-		num *= -1;
+		m *= -n;
 		_putchar('-');
 	}
-
-	m = 1;
-	c = 1;
-
-	while (c)
+	else
 	{
-		if (num / (m * 10) > 0)
-		{
-			m *= 10;
-		}
-		else
-		{
-			c = 0;
-		}
+		m = num;
 	}
-	while (num >= 0)
+
+	if (m / 10)
 	{
-		if (m == 1)
-		{
-			_putchar(num % 10 + '0');
-			num = -1;
-		}
-		else
-		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
-		}
+		print_number(m / 10)
 	}
+	_putchar((m % 10) + '0');
 }
