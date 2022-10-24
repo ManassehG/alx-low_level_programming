@@ -6,13 +6,17 @@
 int main(void)
 {
 	int a;
-	char th[] = "Fizz ";
-	char fi[] = "Buzz ";
-	char thfi[] = "FizzBuzz ";
+	char th[] = "Fizz";
+	char fi[] = "Buzz";
+	char thfi[] = "FizzBuzz";
 
 	for (a = 1; a <= 100; a++)
 	{
-		if (a % 3 == 0)
+		if (a % 3 == 0 && a % 5 == 0)
+		{
+			printf("%s", thfi);
+		}
+		else if (a % 3 == 0)
 		{
 			printf("%s", th);
 		}
@@ -20,14 +24,15 @@ int main(void)
 		{
 			printf("%s", fi);
 		}
-		else if (a % 3 == 0 && a % 5 == 0)
-		{
-			printf("%s", thfi);
-		}
 		else
 		{
-			printf("%d", a);
+			printf("%d ", a);
 		}
+		if (a != 100)
+		{
+			printf(" ");
+		}
+
 
 	}
 	printf("\n ");
