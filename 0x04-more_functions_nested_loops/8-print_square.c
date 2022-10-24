@@ -9,7 +9,7 @@ void print_square(int size)
 {
 	int co, ro;
 	
-	if (n > 0)
+	if (size > 0)
 	{
 		for (co = 1; co <= size; co++)
 		{
