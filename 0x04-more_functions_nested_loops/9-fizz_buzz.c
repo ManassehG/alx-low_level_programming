@@ -1,42 +1,38 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - starting point
- * Return: Always 0 on success
+ * main - Prints a Fizz Buzz program
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a;
-	char th[] = "Fizz";
-	char fi[] = "Buzz";
-	char thfi[] = "FizzBuzz";
+	int x;
 
-	for (a = 1; a <= 100; a++)
+	for (x = 1; x <= 100; x++)
 	{
-		if (a % 3 == 0 && a % 5 == 0)
+		if ((x % 3 == 0) && (x % 5 == 0))
 		{
-			printf("%s", thfi);
+			printf("FizzBuzz");
 		}
-		else if (a % 3 == 0)
+		else if (x % 3 == 0)
 		{
-			printf("%s", th);
+			printf("Fizz");
 		}
-		else if (a % 5 == 0)
+		else if (x % 5 == 0)
 		{
-			printf("%s", fi);
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", a);
+			printf("%d", x);
 		}
-		if (a != 100)
+
+		if (x != 100)
 		{
 			printf(" ");
 		}
-
-
 	}
-	printf("\n ");
+	printf("\n");
 	return (0);
 }
-
