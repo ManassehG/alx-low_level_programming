@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	while (b <= 9)
 	{
-		for (a >= 0; a <= 14; a++)
+		for (a = 0; a <= 14; a++)
 		{
 			if (a >= 10)
 			{
