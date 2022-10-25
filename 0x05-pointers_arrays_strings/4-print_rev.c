@@ -7,13 +7,14 @@
  * Return: Always 0.
  */
 void print_rev(char *s)
-{	
+{
 	int g, leng;
 
 	leng = strlen(s);
 
-	for(g = leng - 1 ; g >= 0; g--)
+	for (g = leng - 1 ; g >= 0; g--)
 	{
-		printf("%c", s[g]);
+		printf("%c\n", s[g]);
 	}
+
 }
