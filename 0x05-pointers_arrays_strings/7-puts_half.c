@@ -8,7 +8,7 @@
  */
 void puts_half(char *str)
 {
-	int a, length, n;
+	int a = 0, length, n;
 
 	length = strlen(str);
 
