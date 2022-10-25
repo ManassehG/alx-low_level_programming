@@ -1,0 +1,2 @@
+#!/bin/bash
+git commit -m 'Pointers and arrays in functions'
