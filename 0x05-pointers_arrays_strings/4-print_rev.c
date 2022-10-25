@@ -8,5 +8,12 @@
  */
 void print_rev(char *s)
 {	
-	strrev(s);
+	int g, leng;
+
+	leng = strlen(s);
+
+	for(g = leng - 1 ; g >= 0; g--)
+	{
+		printf("%c", s[g]);
+	}
 }
