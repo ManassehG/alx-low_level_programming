@@ -10,6 +10,7 @@ char *rot13(char *s)
 
 	char l[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char r13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; l[j] != '\0'; j++)
