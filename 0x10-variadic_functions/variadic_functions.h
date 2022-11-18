@@ -14,7 +14,7 @@ typedef struct printer
 
 } printer_t;
 
-int _putchar(int char);
+int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 
 #endif /* VARIADIC_FUNCTIONS_H */
