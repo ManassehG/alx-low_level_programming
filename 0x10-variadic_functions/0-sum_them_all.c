@@ -5,6 +5,7 @@
  * sum_them_all - check the code
  * @n: input
  * Return: Always 0.
+ * @...: A variable number of paramters to calculate the sum of.
  */
 int sum_them_all(const unsigned int n, ...)
 {
